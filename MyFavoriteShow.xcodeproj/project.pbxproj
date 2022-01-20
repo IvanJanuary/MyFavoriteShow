@@ -16,6 +16,7 @@
 		2C6A69FE2793022500C7FCC8 /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A69FC2793022500C7FCC8 /* ShowTableViewCell.swift */; };
 		2C6A69FF2793022500C7FCC8 /* ShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6A69FD2793022500C7FCC8 /* ShowTableViewCell.xib */; };
 		2C6A6A0327930E1300C7FCC8 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A6A0227930E1300C7FCC8 /* ShowViewController.swift */; };
+		2C6A6A072796F5D500C7FCC8 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6A6A062796F5D500C7FCC8 /* Show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2C6A69FC2793022500C7FCC8 /* ShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
 		2C6A69FD2793022500C7FCC8 /* ShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowTableViewCell.xib; sourceTree = "<group>"; };
 		2C6A6A0227930E1300C7FCC8 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		2C6A6A062796F5D500C7FCC8 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				2C6A6A0227930E1300C7FCC8 /* ShowViewController.swift */,
 				2C6A69FC2793022500C7FCC8 /* ShowTableViewCell.swift */,
 				2C6A69FD2793022500C7FCC8 /* ShowTableViewCell.xib */,
+				2C6A6A062796F5D500C7FCC8 /* Show.swift */,
 				2C6A69EC27903BA100C7FCC8 /* Main.storyboard */,
 				2C6A69EF27903BA400C7FCC8 /* Assets.xcassets */,
 				2C6A69F127903BA400C7FCC8 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6A6A072796F5D500C7FCC8 /* Show.swift in Sources */,
 				2C6A6A0327930E1300C7FCC8 /* ShowViewController.swift in Sources */,
 				2C6A69EB27903BA100C7FCC8 /* ViewController.swift in Sources */,
 				2C6A69E727903BA100C7FCC8 /* AppDelegate.swift in Sources */,
