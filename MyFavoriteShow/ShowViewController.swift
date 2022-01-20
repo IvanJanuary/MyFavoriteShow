@@ -8,26 +8,42 @@
 import UIKit
 
 class ShowViewController: UIViewController {
+    let idCustomCell = "CustomCell"
+    var show: Show?
     
+    @IBOutlet weak var tableView: UITableView!
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        tableView.register(UINib(nibName: "ShowTableViewCell", bundle: nil), forCellReuseIdentifier: idCustomCell)
+    }    
+}
 
-        // Do any additional setup after loading the view.
+extension ShowViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let customCell = tableView.dequeueReusableCell(withIdentifier: idCustomCell) as! ShowTableViewCell
+        customCell.titleLabel.text = show?.name
+        customCell.descriptionLabel.text = show?.description
+        customCell.imageCell.image = #imageLiteral(resourceName: "image2-1")
+        return customCell
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "List"
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
 }
